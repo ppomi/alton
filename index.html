@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="포트폴리오로 알톤스포츠 리뉴얼을 진행하였습니다">
+    <meta name="keywords" content="알톤, 알톤스포츠, 자전거">
+    <meta name="author" content="@imppomi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 | 알톤스포츠</title>
+    <link href="css/index.css" rel="stylesheet">
+
+    <script src="lib/jquery-1.12.4.min.js"></script>
+    <script src="lib/prefixfree.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <!--[if lt IE 9]>	
+		<script src="lib/html5shiv.js"></script>
+    <![endif]-->
+    
+    <!-- <script language="javascript">
+        var loadTimer = setTimeout(function onloadevent(){
+            document.getElementById("loading").style.top="-1000px"
+            document.getElementById("view_wrap").style.overflow="auto"
+        }, 4000);
+        clearTimeout(loadTimer);
+    </script> -->
+</head>
+
+<body id="view_wrap" onload="onloadevent();">
+    <!-- <div id="loading">
+        <svg xmlns="http://www.w3.org/2000/svg" width="347" height="89" viewBox="0 0 347.4 89"><style>.a{fill:#f7ed5c;}</style><path d="M98 20.4c-13.7 14.7-17.6 33.5-26.2 51.7 5.8 0 10.2 0 15.5 0 -2.1 5.3-3.6 9.7-5.7 13.7 -0.6 1.2-2.9 2-4.4 2.1 -6 0.3-12 0.3-18 0.2 -9.3-0.1-12.4-5.1-8.7-13.9 4.6-11.1 9.2-22.1 13.8-33.1 0.5-1.2 0.8-2.4 1.2-3.6 -11.8-4.8-31.7-1.1-39.7 8 -3 3.4-5 8.2-6.1 12.7 -1.5 6.3 2.3 11.6 8.8 12.8 5.7 1 11.5 1.1 18.2 1.7 -3.8 5-7.2 9.7-10.8 14.3 -0.5 0.7-1.7 1-2.7 1.2C20.1 90.9 3 80.4 0.6 67.3c-2.3-12.2 1.7-23.2 10.4-31.9 9.6-9.7 21.2-15.3 35.1-15.4 16.3-0.1 32.6 0 48.9 0C95.8 20 96.6 20.2 98 20.4z" class="a"/><path d="M254.7 88.4c3-8 5.4-15 8.1-21.8 5.6-14.4 11.6-28.6 17-43 1.4-3.6 3.5-5.1 6.9-5.1 14.1 0.1 28.3 0 42.4 0.4 15.3 0.4 21.2 13.5 16.9 25.5 -4.2 11.7-8.8 23.3-13.2 34.9 -0.2 0.6-0.7 1.2-0.7 1.9 0.2 7.4-4.7 7.7-10.2 7.2 -3.1-0.2-6.3 0-9.5-0.1 -5-0.1-5.7-1-3.8-5.6 4.1-10.2 8.2-20.3 12.4-30.4 0.3-0.6 0.7-1.2 0.9-1.8 3.5-10.1 0.9-13.9-9.7-14.2 -2.8-0.1-5.7 0.3-8.5-0.2 -5.6-1-7.5 2.1-9.2 6.6 -4.9 13.2-10.3 26.3-15.3 39.5 -1.7 4.6-4.3 6.6-9.3 6.2C265.2 88.1 260.4 88.4 254.7 88.4z" class="a"/><path d="M208.6 88.6c-4.2-0.3-8.3-0.4-12.5-0.9 -12.3-1.4-19.6-10.2-16.7-22.3 3.7-15.5 10.3-30.2 24.3-39.4 14.1-9.3 29.9-9.6 45.6-5.5 6.2 1.6 10.2 6.7 11.1 13.5 2.4 18.5-15.8 47.4-33.6 52.5 -5.8 1.7-12.1 1.6-18.2 2.3C208.7 88.9 208.7 88.8 208.6 88.6zM211.9 72.1c2.2 0 4.3 0.1 6.5 0 10.7-0.8 25.4-21.1 22.6-31.5 -0.5-1.9-2.7-4.4-4.4-4.7 -14.7-2.6-24.2-1.9-32.1 13.4 -1.1 2.2-2.1 4.5-3.1 6.8C195.7 69.3 197.6 72.2 211.9 72.1z" class="a"/><path d="M170.6 72.1c-2.1 5.4-3.5 9.8-5.7 13.9 -0.7 1.3-3.2 2.3-5 2.3 -8 0.2-16 0.3-24 0.1 -6.7-0.2-9.8-5.5-7-12.5 7.9-20.1 16-40.1 24-60.1 0.2-0.6 0.6-1.2 0.8-1.8 5.7-17 9.7-13.5 22.7-13.8 3.2-0.1 3.6 1.6 2.4 4.3 -1.3 3-2.5 6.1-3.7 9.2 -1.4 3.6-1.4 5.8 3.7 5.1 2.9-0.4 5.9 0.2 8.9 0.3 -2.4 9.2-8.3 13.9-16.9 14.6 -1.8 0.1-4.4 1.8-5.1 3.4 -4.2 9.9-7.9 20.1-11.9 30.1 -1.3 3.2-0.1 4.8 3.2 4.9C161.2 72.1 165.2 72.1 170.6 72.1z" class="a"/><path d="M145.9 0.1c-10.7 26.9-21 52.6-31.2 78.3 -0.2 0.6-0.6 1.2-0.8 1.8 -1 2.7-1.3 6.5-3.2 7.7 -2.1 1.4-5.8 0.5-8.8 0.5 -2.8 0-5.7-0.1-8.5 0 -4.1 0.1-5-1.5-3.5-5.2 5-11.8 9.8-23.6 14.7-35.4 5.1-12.3 10.3-24.5 15.2-36.8 3.5-8.8 6.1-10.9 15.5-10.9C138.5 0.1 141.7 0.1 145.9 0.1z" class="a"/></svg>
+    </div> -->
+    <!-- start of header -->
+    <header class="clear_fix">
+        <h1 id="logo"><a href="index.html" class="text_hide">LOGO</a></h1>
+        <div class="menu_wrap">
+            <div class="util_wrap clear_fix">
+                <ul class="util clear_fix">
+                    <li><a href="#" id="lang_kor">한국어</a>
+                        <ul class="lang_wrap">
+                            <li><a href="#">영어</a></li>
+                            <li><a href="#">일어</a></li>
+                            <li><a href="#">중어</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">그룹웨어</a></li>
+                    <li><input type="search" name="search" id="search" placeholder="검색어를 입력하세요">
+                        <a href="#" class="search text_hide">검색</a>
+                    </li>
+                </ul>
+            </div>
+            <nav class="gnb clear_fix">
+                <ul class="clear_fix">
+                    <li><a href="#">자전거
+                        <span class="highlight"></span>
+                    </a>
+                        <ul class="sub_menu">
+                            <li><a href="html/lineup.html">라인업</a></li>
+                            <li><a href="html/brand.html">브랜드</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">용품
+                        <span class="highlight"></span>
+                    </a>
+                        <ul class="sub_menu">
+                            <li><a href="#">라이더 착용</a></li>
+                            <li><a href="#">자전거 장착</a></li>
+                            <li><a href="#">유지, 관리</a></li>
+                            <li><a href="#">부품, 공구</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">고객서비스
+                        <span class="highlight"></span>
+                    </a></li>
+                    <li><a href="#">전국대리점
+                        <span class="highlight"></span>
+                    </a></li>
+                    <li><a href="#">기업정보
+                        <span class="highlight"></span>
+                    </a>
+                        <ul class="sub_menu">
+                            <li><a href="#">기업개요</a></li>
+                            <li><a href="#">브랜드스토리</a></li>
+                            <li><a href="#">인재채용</a></li>
+                            <li><a href="#">투자정보</a></li>
+                        </ul>       
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- End of header -->
+
+    <!-- Start of aside_sticky -->
+    <div id="aside_sticky">
+        <div class="search_bike">
+            <div class="search_bg"></div>
+            <a href="#">자전거 찾기<span class="fluid_bar"></span></a>                
+        </div>
+        <div class="top_btn">
+            <a href="#"><img src="img/common/top_btn.png" alt="위로 이동">top</a>
+        </div>
+        <div class="sns_wrap">
+            <a href="#"><img src="img/common/sns_fb_icon.png" alt="페이스북"></a>
+            <a href="#"><img src="img/common/sns_in_icon.png" alt="인스타그램"></a>
+            <a href="#"><img src="img/common/sns_yt_icon.png" alt="유튜브"></a>
+        </div>
+    </div>
+    <!-- End of aside aside_sticky -->
+
+    <!-- Start of content -->
+    <div class="content">
+        <!-- Start of main_visual -->
+        <div class="main_visual clear_fix">
+            <div class="slide_bg"></div>
+            <div class="slide_img">
+                <img src="img/mv_slide01.jpg" alt="전세계가 인정한 알톤자전거">
+                <img src="img/mv_slide02.jpg" alt="전세계가 인정한 알톤자전거2">
+                <img src="img/mv_slide03.jpg" alt="전세계가 인정한 알톤자전거3">
+            </div>
+            <div class="slide_con_wrap">
+                <div class="slide_con">
+                    <div class="slide_title">
+                        전세계가<br>
+                        인정한<br>
+                        알톤자전거
+                    </div>
+                    <div class="slide_des">
+                        DO THE BEST, BE THE STYLE<br>
+                        알톤스포츠는 독보적인 상품기획력과 디자인으로<br>
+                        세계적 수준의 종합 바이크 전문기업으로 도약합니다.
+                    </div>
+                    <div class="slide_btn">
+                        <a href="html/lineup.html">
+                            알톤자전거 더 알아보기
+                            <span class="fluid_bar"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide_con">
+                    <div class="slide_title">
+                        전세계가<br>
+                        인정한<br>
+                        알톤자전거2
+                    </div>
+                    <div class="slide_des">
+                        DO THE BEST, BE THE STYLE<br>
+                        알톤스포츠는 독보적인 상품기획력과 디자인으로<br>
+                        세계적 수준의 종합 바이크 전문기업으로 도약합니다.
+                    </div>
+                    <div class="slide_btn">
+                        <a href="html/lineup.html">
+                            알톤자전거 더 알아보기
+                            <span class="fluid_bar"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide_con">
+                    <div class="slide_title">
+                        전세계가<br>
+                        인정한<br>
+                        알톤자전거3
+                    </div>
+                    <div class="slide_des">
+                        DO THE BEST, BE THE STYLE<br>
+                        알톤스포츠는 독보적인 상품기획력과 디자인으로<br>
+                        세계적 수준의 종합 바이크 전문기업으로 도약합니다.
+                    </div>
+                    <div class="slide_btn">
+                        <a href="html/lineup.html">
+                            알톤자전거 더 알아보기
+                            <span class="fluid_bar"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide_dot">
+                <span class="text_hide">1</span>
+                <span class="text_hide">2</span>
+                <span class="text_hide">3</span>
+            </div>
+        </div>
+        <!-- End of main_visual -->
+
+        <div class="alton_story animatable">
+            <h2>ALTON STORY</h2>
+            <div class="story_bg">
+                <div class="story_des">
+                    자전거에 대한 사람들의 생각을 바꾸어 온 우리는<br>
+                    이제 다시 한번 그 한계를 넘어서고자 합니다
+                </div>
+                <div class="story_btn">
+                    <a href="#">
+                        알톤과 함께하기
+                        <span class="fluid_bar"></span>
+                    </a>
+                </div>
+                <div class="story_fluid">
+                    DO THE BEST, ALTON SPORTS 2019
+                </div>
+            </div>
+        </div>
+
+        <div class="alton_style">
+            <div class="style_bg animatable"></div>
+            <div class="style_title clear_fix animatable">
+                <h2>나만의 자전거 스타일</h2>
+                <a href="html/lineup.html">자전거 더 보러가기
+                    <span class="fluid_bar"></span>
+                </a>
+            </div>
+            <div class="style_slide clear_fix animatable">
+                <div class="slide_img">
+                    <img src="img/style_slide01.jpg" alt="전기자전거">
+                    <img src="img/style_slide02.jpg" alt="산악자전거">
+                    <img src="img/style_slide03.jpg" alt="로드">
+                    <img src="img/style_slide04.jpg" alt="하이브리드">
+                    <img src="img/style_slide05.jpg" alt="미니벨로">
+                    <img src="img/style_slide06.jpg" alt="폴딩">
+                </div>
+                <div class="slide_list">
+                    <ul>
+                        <li><a href="#" class="clear_fix"><span>전기자전거</span><img src="img/common/right_arrow.png" alt="보러가기"></a></li>
+                        <li><a href="#" class="clear_fix"><span>산악자전거</span><img src="img/common/right_arrow.png" alt="보러가기"></a></li>
+                        <li><a href="#" class="clear_fix"><span>로드</span><img src="img/common/right_arrow.png" alt="보러가기"></a></li>
+                        <li><a href="#" class="clear_fix"><span>하이브리드</span><img src="img/common/right_arrow.png" alt="보러가기"></a></li>
+                        <li><a href="#" class="clear_fix"><span>미니벨로</span><img src="img/common/right_arrow.png" alt="보러가기"></a></li>
+                        <li><a href="#" class="clear_fix"><span>폴딩</span><img src="img/common/right_arrow.png" alt="보러가기"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="alton_video">
+            <figure class="video animatable">
+                <video autoplay>
+                    <source src="media/ealton.mp4" type="video/mp4">
+                </video>
+            </figure>
+            <div class="share_btn animatable">
+                <input type="checkbox" href="#" name="share_open" id="share_open" class="share_open">
+                <label class="share_open_btn" for="share_open">
+                    <img src="img/common/share_btn.png" alt="영상 공유하기">
+                </label>
+                <a href="#" class="share_item"><img src="img/common/sns_fb_icon.png" alt="페이스북"></a>
+                <a href="#" class="share_item"><img src="img/common/sns_nb_icon.png" alt="네이버블로그"></a>
+                <a href="#" class="share_item"><img src="img/common/sns_tw_icon.png" alt="트위터"></a>
+            </div>
+            <!-- filters -->
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="goo"></svg>
+        </div>
+
+        <div class="alton_service">
+            <div class="service_wrapper">
+                <h2 class="animatable">알톤스포츠 서비스</h2>
+                <div class="service_inner_wrapper animatable">
+                    <div class="service_con">
+                        <div class="service_img school">
+                            <div class="service_mask"></div>
+                            <div class="service_title">
+                                알톤 메카닉 스쿨
+                            </div>
+                            <div class="service_des">
+                                초보부터 매니아까지 즐거운 바이크 라이프를 위해<br>
+                                꼭 필요한 지식들을 정리해 두었습니다.
+                            </div>
+                            <div class="service_btn">
+                                <a href="#">
+                                    자세히 보기
+                                    <span class="fluid_bar"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service_con">
+                        <div class="service_img search">
+                            <div class="service_mask"></div>
+                            <div class="service_title">
+                                알톤 대리점 찾기
+                            </div>
+                            <div class="service_des">
+                                전국 각 지역별 알톤 대리점을 만나보세요.<br>
+                                항상 고객님 곁에 든든한 파트너가 되겠습니다.
+                            </div>
+                            <div class="service_btn">
+                                <a href="#">
+                                    자세히 보기
+                                    <span class="fluid_bar"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of content -->
+
+    <!-- Start of footer -->
+    <footer>
+        <div class="footer_head">
+            <div class="footer_menu clear_fix">
+                <div class="footer_util">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">법적고지</a>
+                </div>
+                <div class="family_site">
+                    <span>패밀리사이트&nbsp;&gt;</span>
+                    <a href="#">이녹스</a>
+                    <a href="#">이녹스 첨단소재</a>
+                    <a href="#">인피자</a>
+                </div>
+            </div>
+            <div class="newsletter_submit">
+                <input type="text" name="newsletter" id="newsletter_submit" placeholder="유익한 알톤스포츠의 뉴스레터를 받아볼 이메일 주소를 입력하세요">
+                <input type="submit" id="submit_btn" value="신청">
+            </div>
+        </div>
+        <div class="footer_des">
+            <h3>(주)알톤스포츠</h3>
+            <address>본사 : 경기도 성남시 분당구 판교역로 221 투썬월드빌딩  TEL : 031 ) 727 - 9100  A/S : 031 ) 859 - 0100  FAX : 031 ) 727 - 9291</address>
+            <p>Copyright &copy; 2016 ALTON Sports Co., Ltd, All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- End of footer -->
+</body>
+
+</html>
