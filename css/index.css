@@ -79,7 +79,7 @@ header{width:100%;height:200px;}
 .main_visual .slide_con_wrap .slide_con .slide_btn a .fluid_bar{display:block;width:20px;height:4px;background:#222222;margin-left:-10px;transition:all 0.3s ease-in;}
 .main_visual .slide_con_wrap .slide_con .slide_btn a:hover .fluid_bar{width:256px;}
 .main_visual .slide_dots{width:400px;height:70px;float:left;margin-left:100px;margin-top:50px;opacity:0;}
-.main_visual .slide_dots.pop_out{animation:pop 1s 4s forwards linear;}
+.main_visual .slide_dots.pop_out{animation:pop 0.5s 2.5s forwards ease-out;}
 .main_visual .slide_dots .slide_dot{display:inline-block;width:15px;height:15px;background:#222222;border-radius:8px;margin-right:2px;cursor:pointer;}
 .main_visual .slide_dots .slide_dot.active_slide{background:#f7ed5c;}
 .main_visual .slide_dots .slide_dot:hover{width:5px;height:5px;background:#222222;border-radius:7px;border:5px solid #999999;}
