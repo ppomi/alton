@@ -19,23 +19,13 @@
 		<script src="lib/html5shiv.js"></script>
     <![endif]-->
     
-    <!-- <script language="javascript">
-        var loadTimer = setTimeout(function onloadevent(){
-            document.getElementById("loading").style.top="-1000px"
-            document.getElementById("view_wrap").style.overflow="auto"
-        }, 4000);
-        clearTimeout(loadTimer);
-    </script> -->
 </head>
 
-<body id="view_wrap" onload="onloadevent();">
-    <!-- <div id="loading">
-        <svg xmlns="http://www.w3.org/2000/svg" width="347" height="89" viewBox="0 0 347.4 89"><style>.a{fill:#f7ed5c;}</style><path d="M98 20.4c-13.7 14.7-17.6 33.5-26.2 51.7 5.8 0 10.2 0 15.5 0 -2.1 5.3-3.6 9.7-5.7 13.7 -0.6 1.2-2.9 2-4.4 2.1 -6 0.3-12 0.3-18 0.2 -9.3-0.1-12.4-5.1-8.7-13.9 4.6-11.1 9.2-22.1 13.8-33.1 0.5-1.2 0.8-2.4 1.2-3.6 -11.8-4.8-31.7-1.1-39.7 8 -3 3.4-5 8.2-6.1 12.7 -1.5 6.3 2.3 11.6 8.8 12.8 5.7 1 11.5 1.1 18.2 1.7 -3.8 5-7.2 9.7-10.8 14.3 -0.5 0.7-1.7 1-2.7 1.2C20.1 90.9 3 80.4 0.6 67.3c-2.3-12.2 1.7-23.2 10.4-31.9 9.6-9.7 21.2-15.3 35.1-15.4 16.3-0.1 32.6 0 48.9 0C95.8 20 96.6 20.2 98 20.4z" class="a"/><path d="M254.7 88.4c3-8 5.4-15 8.1-21.8 5.6-14.4 11.6-28.6 17-43 1.4-3.6 3.5-5.1 6.9-5.1 14.1 0.1 28.3 0 42.4 0.4 15.3 0.4 21.2 13.5 16.9 25.5 -4.2 11.7-8.8 23.3-13.2 34.9 -0.2 0.6-0.7 1.2-0.7 1.9 0.2 7.4-4.7 7.7-10.2 7.2 -3.1-0.2-6.3 0-9.5-0.1 -5-0.1-5.7-1-3.8-5.6 4.1-10.2 8.2-20.3 12.4-30.4 0.3-0.6 0.7-1.2 0.9-1.8 3.5-10.1 0.9-13.9-9.7-14.2 -2.8-0.1-5.7 0.3-8.5-0.2 -5.6-1-7.5 2.1-9.2 6.6 -4.9 13.2-10.3 26.3-15.3 39.5 -1.7 4.6-4.3 6.6-9.3 6.2C265.2 88.1 260.4 88.4 254.7 88.4z" class="a"/><path d="M208.6 88.6c-4.2-0.3-8.3-0.4-12.5-0.9 -12.3-1.4-19.6-10.2-16.7-22.3 3.7-15.5 10.3-30.2 24.3-39.4 14.1-9.3 29.9-9.6 45.6-5.5 6.2 1.6 10.2 6.7 11.1 13.5 2.4 18.5-15.8 47.4-33.6 52.5 -5.8 1.7-12.1 1.6-18.2 2.3C208.7 88.9 208.7 88.8 208.6 88.6zM211.9 72.1c2.2 0 4.3 0.1 6.5 0 10.7-0.8 25.4-21.1 22.6-31.5 -0.5-1.9-2.7-4.4-4.4-4.7 -14.7-2.6-24.2-1.9-32.1 13.4 -1.1 2.2-2.1 4.5-3.1 6.8C195.7 69.3 197.6 72.2 211.9 72.1z" class="a"/><path d="M170.6 72.1c-2.1 5.4-3.5 9.8-5.7 13.9 -0.7 1.3-3.2 2.3-5 2.3 -8 0.2-16 0.3-24 0.1 -6.7-0.2-9.8-5.5-7-12.5 7.9-20.1 16-40.1 24-60.1 0.2-0.6 0.6-1.2 0.8-1.8 5.7-17 9.7-13.5 22.7-13.8 3.2-0.1 3.6 1.6 2.4 4.3 -1.3 3-2.5 6.1-3.7 9.2 -1.4 3.6-1.4 5.8 3.7 5.1 2.9-0.4 5.9 0.2 8.9 0.3 -2.4 9.2-8.3 13.9-16.9 14.6 -1.8 0.1-4.4 1.8-5.1 3.4 -4.2 9.9-7.9 20.1-11.9 30.1 -1.3 3.2-0.1 4.8 3.2 4.9C161.2 72.1 165.2 72.1 170.6 72.1z" class="a"/><path d="M145.9 0.1c-10.7 26.9-21 52.6-31.2 78.3 -0.2 0.6-0.6 1.2-0.8 1.8 -1 2.7-1.3 6.5-3.2 7.7 -2.1 1.4-5.8 0.5-8.8 0.5 -2.8 0-5.7-0.1-8.5 0 -4.1 0.1-5-1.5-3.5-5.2 5-11.8 9.8-23.6 14.7-35.4 5.1-12.3 10.3-24.5 15.2-36.8 3.5-8.8 6.1-10.9 15.5-10.9C138.5 0.1 141.7 0.1 145.9 0.1z" class="a"/></svg>
-    </div> -->
+<body>
     <!-- start of header -->
     <header class="clear_fix">
         <h1 id="logo"><a href="index.html" class="text_hide">LOGO</a></h1>
-        <div class="menu_wrap">
+        <div class="menu_wrap fade_in">
             <div class="util_wrap clear_fix">
                 <ul class="util clear_fix">
                     <li><a href="#" id="lang_kor">한국어</a>
@@ -95,18 +85,18 @@
     <!-- End of header -->
 
     <!-- Start of aside_sticky -->
-    <div id="aside_sticky">
+    <div id="aside_sticky" class="fade_in">
         <div class="search_bike">
             <div class="search_bg"></div>
             <a href="#">자전거 찾기<span class="fluid_bar"></span></a>                
         </div>
         <div class="top_btn">
-            <a href="#"><img src="img/common/top_btn.png" alt="위로 이동">top</a>
+            <a id="top_btn" href="#"><img src="img/common/top_btn.png" alt="위로 이동">top</a>
         </div>
         <div class="sns_wrap">
-            <a href="#"><img src="img/common/sns_fb_icon.png" alt="페이스북"></a>
-            <a href="#"><img src="img/common/sns_in_icon.png" alt="인스타그램"></a>
-            <a href="#"><img src="img/common/sns_yt_icon.png" alt="유튜브"></a>
+            <a href="https://www.facebook.com/altonbicycle" target="_blank"><img src="img/common/sns_fb_icon.png" alt="페이스북"></a>
+            <a href="https://blog.naver.com/altonbicycle" target="_blank"><img src="img/common/sns_nb_icon.png" alt="네이버블로그"></a>
+            <a href="https://www.youtube.com/channel/UCQ0L2nnrRK4DCAx6dC5Jbhg" target="_blank"><img src="img/common/sns_yt_icon.png" alt="유튜브"></a>
         </div>
     </div>
     <!-- End of aside aside_sticky -->
@@ -116,13 +106,13 @@
         <!-- Start of main_visual -->
         <div class="main_visual clear_fix">
             <div class="slide_bg"></div>
-            <div class="slide_img">
-                <img src="img/mv_slide01.jpg" alt="전세계가 인정한 알톤자전거">
-                <img src="img/mv_slide02.jpg" alt="전세계가 인정한 알톤자전거2">
-                <img src="img/mv_slide03.jpg" alt="전세계가 인정한 알톤자전거3">
+            <div class="slide_imgs forward">
+                <img class="slide_img active_slide" src="img/mv_slide01.jpg" alt="전세계가 인정한 알톤자전거">
+                <img class="slide_img" src="img/mv_slide02.jpg" alt="전세계가 인정한 알톤자전거2">
+                <img class="slide_img" src="img/mv_slide03.jpg" alt="전세계가 인정한 알톤자전거3">
             </div>
-            <div class="slide_con_wrap">
-                <div class="slide_con">
+            <div class="slide_con_wrap pop_out">
+                <div class="slide_con active_slide">
                     <div class="slide_title">
                         전세계가<br>
                         인정한<br>
@@ -171,16 +161,16 @@
                     </div>
                     <div class="slide_btn">
                         <a href="html/lineup.html">
-                            알톤자전거 더 알아보기
+                            알톤 고급 Infiza 시리즈
                             <span class="fluid_bar"></span>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="slide_dot">
-                <span class="text_hide">1</span>
-                <span class="text_hide">2</span>
-                <span class="text_hide">3</span>
+            <div class="slide_dots pop_out">
+                <span class="slide_dot active_slide"></span>
+                <span class="slide_dot"></span>
+                <span class="slide_dot"></span>
             </div>
         </div>
         <!-- End of main_visual -->
