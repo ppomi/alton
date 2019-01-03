@@ -49,6 +49,7 @@ html{font-family:'Noto Sans KR',sans-serif;color:#222222;
     .menu_wrap .gnb > ul > li > a{display:block;width:170px;height:100%;overflow:hidden;text-align:center;font-size:18px;font-weight:700;line-height:60px;}
     .menu_wrap .gnb > ul > li > a .highlight{position:absolute;top:0px;left:50%;margin-left:-75px;z-index:-1;display:block;width:150px;height:0px;background:#f7ed5c;transition: all 0.2s ease-in;}
     .menu_wrap .gnb > ul > li > a:hover .highlight{top:30px;height:16px;}
+    .menu_wrap .gnb > ul > li > a.on .highlight{top:30px;height:16px;}
     .menu_wrap .gnb > ul > li .sub_menu{display:none;}
     
     #aside_sticky{width:100px;height:500px;position:fixed;right:0;bottom:100px;z-index:10;opacity:0;}
@@ -110,7 +111,8 @@ html{font-family:'Noto Sans KR',sans-serif;color:#222222;
     .menu_wrap .gnb > ul > li:nth-child(1) .menu_bar{display:block;width:30px;height:3px;margin-bottom:8px;background:#222222;}
     .menu_wrap .gnb > ul > li > a{display:block;width:170px;height:100%;overflow:hidden;text-align:center;font-size:18px;font-weight:700;line-height:60px;}
     .menu_wrap .gnb > ul > li > a .highlight{position:absolute;top:0px;left:50%;margin-left:-75px;z-index:-1;display:block;width:150px;height:0px;background:#f7ed5c;transition: all 0.2s ease-in;}
-    .menu_wrap .gnb > ul > li > a:hover .highlight{top:30px;height:16px;}
+    .menu_wrap .gnb > ul > li > a:hover .highlight{top:30px;height:16px;}    
+    .menu_wrap .gnb > ul > li > a.on .highlight{top:30px;height:16px;}
     .menu_wrap .gnb > ul > li .sub_menu{display:none;}
     
     #aside_sticky{width:100px;height:500px;position:fixed;right:0;bottom:100px;z-index:10;opacity:0;}
@@ -173,6 +175,7 @@ html{font-family:'Noto Sans KR',sans-serif;color:#222222;
     .menu_wrap .gnb > ul > li > a{display:block;width:170px;height:100%;overflow:hidden;text-align:center;font-size:18px;font-weight:700;line-height:60px;}
     .menu_wrap .gnb > ul > li > a .highlight{position:absolute;top:0px;left:50%;margin-left:-75px;z-index:-1;display:block;width:150px;height:0px;background:#f7ed5c;transition: all 0.2s ease-in;}
     .menu_wrap .gnb > ul > li > a:hover .highlight{top:30px;height:16px;}
+    .menu_wrap .gnb > ul > li > a.on .highlight{top:30px;height:16px;}
     .menu_wrap .gnb > ul > li .sub_menu{display:none;}
     
     #aside_sticky{width:100px;height:500px;position:fixed;right:0;bottom:100px;z-index:10;opacity:0;}
@@ -237,6 +240,7 @@ html{font-family:'Noto Sans KR',sans-serif;color:#222222;
     .menu_wrap .gnb > ul > li > a{display:block;width:170px;height:100%;overflow:hidden;text-align:center;font-size:1.8rem;font-weight:700;line-height:6rem;margin:auto;}
     .menu_wrap .gnb > ul > li > a .highlight{position:absolute;top:0px;left:50%;margin-left:-75px;z-index:-1;display:block;width:150px;height:0px;background:#f7ed5c;transition: all 0.2s ease-in;}
     .menu_wrap .gnb > ul > li > a:hover .highlight{top:30px;height:16px;}
+    .menu_wrap .gnb > ul > li > a.on .highlight{top:30px;height:16px;}
     .menu_wrap .gnb > ul > li .sub_menu{display:none;}
     .menu_wrap .gnb > ul.on{display:block;width:100%;height:100%;position:absolute;top:0;left:0;background:#ffffff;z-index:90;}
     .menu_wrap .gnb > ul > li.on{display:block;font-size:2rem;color:#222222;z-index:100;}
