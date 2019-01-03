@@ -51,6 +51,7 @@ $(function(){
      $('#menu_bar').click(function(){
          $('.gnb>ul').toggleClass('on');
          $('.gnb>ul>li').toggleClass('on');
+         $('.main_visual').toggleClass('on');
      });
 });
 // 메인비주얼, 스타일 슬라이드 동작
