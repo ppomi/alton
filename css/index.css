@@ -344,7 +344,7 @@
     .alton_story .story_bg .story_btn a .fluid_bar{display:block;width:20px;height:4px;background:#222222;margin-left:-10px;transition:all 0.3s ease-in;}
     .alton_story .story_bg .story_btn a:hover .fluid_bar{width:140px;}
     .alton_story .story_bg .story_fluid{width:320%;height:180px;overflow:hidden;font-family:'Noto Sans KR Black';font-weight:700;font-size:22rem;line-height:18rem;color:rgba(240, 240, 240, 0.5);position:absolute;bottom:0;left:0;animation:fluid 600s infinite;}
-    .alton_style{width:100%;height:934px;margin-bottom:200px;position:relative;}
+    .alton_style{width:100%;height:630px;margin-bottom:200px;position:relative;}
     .alton_style .style_bg{position:absolute;top:50%;margin-top:-360px;left:50%;margin-left:-573px;width:800px;height:746px;background-image:linear-gradient(180deg, #f7ed5c 0%, #eee34d 100%);border-radius:42% 58% 70% 30% / 45% 45% 55% 55%;animation:morph 5s linear infinite;z-index:-1;}
     .alton_style .style_title{width:100%;height:34px;line-height:3.4rem;margin:auto;margin-bottom:20px;}
     .alton_style .style_title h2{width:100%;font-size:2.4rem;font-weight:700;}
@@ -368,8 +368,8 @@
     .alton_video .video{width:100%;height:100%;}
     .alton_video .video video{min-width:100%;min-height:100%;width:20vw;height:auto;}
     .alton_video .share_btn{-webkit-filter:url("#goo");filter:url("#goo");position:absolute;top:-60px;right:-50%;width:100%;height:100%;box-sizing:border-box;font-size:20px;text-align:left;}
-    #goo{position:absolute;top:0;left:0;}
-    .alton_video .share_btn .share_open_btn, .alton_video .share_btn .share_item{background:rgb(247, 237, 92);border-radius:100%;width:70px;height:70px;margin-left:-35px;position:absolute;top:20px;color:#fff;text-align:center;line-height:60px;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);-webkit-transition:-webkit-all ease-out 0.2s;transition:all ease-out 0.2s;}
+    #goo{position:absolute;top:0;left:0;z-index:-1;}
+    .alton_video .share_btn .share_open_btn, .alton_video .share_btn .share_item{background:rgb(247, 237, 92);border-radius:100%;width:50px;height:50px;margin-left:-25px;position:absolute;top:30px;color:#fff;text-align:center;line-height:40px;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);-webkit-transition:-webkit-all ease-out 0.2s;transition:all ease-out 0.2s;}
     .alton_video .share_btn .share_open_btn img, .alton_video .share_btn .share_item img{width:20px;vertical-align:-7px;}
     .alton_video .share_btn .share_open{display:none;}
     .alton_video .share_btn .share_open_btn{z-index:2;-webkit-transition-timing-function:cubic-bezier(.175,.885,.32,1.275);transition-timing-function:cubic-bezier(.175,.885,.32,1.275);-webkit-transition-duration:.4s;transition-duration:.4s;-webkit-transform:scale(1.1,1.1) translate3d(0,0,0);transform:scale(1.1,1.1) translate3d(0,0,0);cursor:pointer;}
@@ -377,17 +377,17 @@
     .alton_video .share_btn .share_item:hover{background:#ffffff;}
     .alton_video .share_btn .share_open:checked+.share_open_btn{-webkit-transition-timing-function:linear;transition-timing-function:linear;-webkit-transition-duration:.2s;transition-duration:.2s;-webkit-transform:scale(.8,.8) translate3d(0,0,0);transform:scale(.8,.8) translate3d(0,0,0);}
     .alton_video .share_btn .share_open:checked~.share_item{-webkit-transition-timing-function:cubic-bezier(.935,0,.34,1.33);transition-timing-function:cubic-bezier(.935,0,.34,1.33);}
-    .alton_video .share_btn .share_open:checked~.share_item:nth-child(3){-webkit-transition-duration:380ms;transition-duration:380ms;-webkit-transform:translate3d(90.95px,52.48px,0);transform:translate3d(90.95px,52.48px,0);}
-    .alton_video .share_btn .share_open:checked~.share_item:nth-child(4){-webkit-transition-duration:480ms;transition-duration:480ms;-webkit-transform:translate3d(.08px,105px,0);transform:translate3d(.08px,105px,0);}
-    .alton_video .share_btn .share_open:checked~.share_item:nth-child(5){-webkit-transition-duration:580ms;transition-duration:580ms;-webkit-transform:translate3d(-90.86px,52.62px,0);transform:translate3d(-90.86px,52.62px,0);}
+    .alton_video .share_btn .share_open:checked~.share_item:nth-child(3){-webkit-transition-duration:380ms;transition-duration:380ms;-webkit-transform:translate3d(60.95px,-52.48px,0);transform:translate3d(60.95px,-52.48px,0);}
+    .alton_video .share_btn .share_open:checked~.share_item:nth-child(4){-webkit-transition-duration:480ms;transition-duration:480ms;-webkit-transform:translate3d(.08px,-80px,0);transform:translate3d(.08px,-80px,0);}
+    .alton_video .share_btn .share_open:checked~.share_item:nth-child(5){-webkit-transition-duration:580ms;transition-duration:580ms;-webkit-transform:translate3d(-60.86px,-52.62px,0);transform:translate3d(-60.86px,-52.62px,0);}
     .alton_service{width:100%;height:auto;margin-bottom:200px;}
     .alton_service .service_wrapper{width:100%;height:auto;background:#ffffff;}
-    .alton_service .service_wrapper h2{width:100%;height:auto;margin:auto;padding-top:80px;font-size:2.4rem;}
+    .alton_service .service_wrapper h2{width:100%;height:auto;margin:auto;font-size:2.4rem;}
     .alton_service .service_wrapper .service_inner_wrapper{width:100%;height:auto;margin:auto;}
     .alton_service .service_wrapper .service_con{width:100%;height:530px;margin-top:20px;cursor:pointer;text-align:center;}
     .alton_service .service_wrapper .service_con:nth-child(2){margin-right:0px;}
     .alton_service .service_wrapper .service_con .service_img{width:100%;height:100%;position:relative;}
-    .service_con .service_img .service_mask{width:100%;height:100%;position:absolute;top:0;right:0;background:rgba(255,255,255,0.4);z-index:2;transition:all 1s;}
+    .service_con .service_img .service_mask{width:100%;height:100%;position:absolute;top:0;right:0;background:rgba(247,237,92,0.5);z-index:2;transition:all 1s;}
     .service_con .service_img.school{background:url('../img/service_con01.jpg') no-repeat center center;background-size:cover;}
     .service_con .service_img.search{background:url('../img/service_con02.jpg') no-repeat center center;background-size:cover;}
     .service_con .service_img .service_title{width:100%;font-family:'Noto Sans KR Black';font-size:4rem;position:absolute;top:100px;left:0;z-index:10;transition:all 1s;}

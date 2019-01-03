@@ -257,7 +257,7 @@ html{font-family:'Noto Sans KR',sans-serif;color:#222222;
     footer{width:100%;height:380px;color:#666666;padding-top:20px;border-top:1px solid #eeeeee;padding:0px 20px;box-sizing:border-box;}
     footer .footer_head{width:100%;height:79px;margin:auto;border-bottom:1px solid #666666;padding-top:10px;}
     footer .footer_head .footer_menu{width:100%;height:100%;float:left;font-size:1.4rem;line-height:3.2rem;}
-    footer .footer_head .footer_menu a{display:inline-block;font-size:1.4rem;line-height:2.4rem;margin-right:40px;color:#666666;border-bottom:4px solid transparent;}
+    footer .footer_head .footer_menu a{display:inline-block;font-size:1.4rem;line-height:2.4rem;margin-right:30px;color:#666666;border-bottom:4px solid transparent;}
     footer .footer_head .footer_menu a:hover{border-bottom:4px solid #f7ed5c;}
     footer .footer_head .footer_menu .family_site span{display:none;}
     footer .footer_head .footer_menu .family_site a:nth-child(3){width:100px;text-align:center;}
