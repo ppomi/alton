@@ -85,3 +85,40 @@ $(function(){
         }
     });
 });
+
+//lineup.html
+$(function(){
+    //lineup_dot 클릭시 text복제
+    $('.lineup_dot').click(function(e) {
+        e.preventDefault();
+        var copiedText = $(this).text();
+        var copiedIndex = $(this).index();
+
+        $('.lineup_title').html(copiedText);
+        if(copiedIndex == 0){
+            $('.lineup_des').html('친환경 전기모터의 도움으로 보다 쉬운 주행이 가능한 자전거');
+        }else if(copiedIndex == 1){
+            $('.lineup_des').html('산과 험로에서 안정적인 주행이 가능한 오프로드');
+        }else if(copiedIndex == 2){
+            $('.lineup_des').html('일상 속 편안한 주행이 가능한 유사산악자전거형 자전거');
+        }else if(copiedIndex == 3){
+            $('.lineup_des').html('포장 도로에서 빠른 속도로 주행토록 설계된 자전거');
+        }else if(copiedIndex == 4){
+            $('.lineup_des').html('산악자전거의 안정감과 로드자전거의 속도감을 더한 일상용');
+        }else if(copiedIndex == 5){
+            $('.lineup_des').html('보관과 휴대가 편리한 작은 크기의 자전거');
+        }else if(copiedIndex == 6){
+            $('.lineup_des').html('도시인의 개성있는 라이프 스타일');
+        }else if(copiedIndex == 7){
+            $('.lineup_des').html('싱글 기어와 심플한 디자인의 스타일리쉬 자전거');
+        }else if(copiedIndex == 8){
+            $('.lineup_des').html('출퇴근과 주말 레저활동까지 가능한 생활용 자전거');
+        }else if(copiedIndex == 9){
+            $('.lineup_des').html('미취학 아이들을 위한 보조바퀴가 있는 자전거');
+        }else if(copiedIndex == 10){
+            $('.lineup_des').html('초등학생들이 타기 적합한 두 발 자전거');
+        }else{
+            $('.lineup_des').html('기타 자전거');
+        }
+    });
+});
