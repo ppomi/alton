@@ -7,7 +7,7 @@
     <meta name="description" content="포트폴리오로 알톤스포츠 리뉴얼을 진행하였습니다">
     <meta name="keywords" content="알톤, 알톤스포츠, 자전거">
     <meta name="author" content="@imppomi">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scali=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>메인 | 알톤스포츠</title>
     <link href="css/index.css" rel="stylesheet">
 
@@ -37,7 +37,11 @@
                     </li>
                     <li><a href="#">사이트맵</a></li>
                     <li><a href="#">그룹웨어</a></li>
-                    <li><input type="search" name="search" id="search" placeholder="검색어를 입력하세요">
+                    <li>
+                        <form>
+                            <label for="search" class="text_hide">검색하기</label>
+                            <input type="search" name="search" id="search" placeholder="검색어를 입력하세요">
+                        </form>
                         <a href="#" class="search text_hide">검색</a>
                     </li>
                 </ul>
@@ -305,8 +309,11 @@
                 </div>
             </div>
             <div class="newsletter_submit">
-                <input type="text" name="newsletter" id="newsletter_submit" placeholder="유익한 알톤스포츠의 뉴스레터를 받아볼 이메일 주소를 입력하세요">
-                <input type="submit" id="submit_btn" value="신청">
+                <form>
+                    <label for="newsletter_submit" class="text_hide">뉴스레터 신청</label>
+                    <input type="text" name="newsletter" id="newsletter_submit" placeholder="유익한 알톤스포츠의 뉴스레터를 받아볼 이메일 주소를 입력하세요">
+                    <input type="submit" id="submit_btn" value="신청">
+                </form>
             </div>
         </div>
         <div class="footer_des">

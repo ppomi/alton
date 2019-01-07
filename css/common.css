@@ -203,7 +203,7 @@ html{font-family:'Noto Sans KR',sans-serif;color:#222222;
     footer .footer_head .newsletter_submit #newsletter_submit{font-family:'Noto Sans KR';font-size:16px;width:485px;height:50px;background:none;border:none;border-right:4px solid #f7ed5c;}
     footer .footer_head .newsletter_submit #newsletter_submit::placeholder{font-family:'Noto Sans KR';font-size:14px;text-align:center;}
     footer .footer_head .newsletter_submit #newsletter_submit:-ms-input-placeholder{font-family:'Noto Sans KR';font-size:14px;text-align:center;}
-    footer .footer_head .newsletter_submit #submit_btn{font-family:'Noto Sans KR';font-size:16px;width:50px;height:100%;font-weight:700;background:none;border:none;color:#666666;cursor:pointer;}
+    footer .footer_head .newsletter_submit #submit_btn{font-family:'Noto Sans KR';font-size:16px;width:48px;height:100%;font-weight:700;background:none;border:none;color:#666666;cursor:pointer;}
     footer .footer_des{width:1200px;height:auto;margin:auto;padding-top:80px;text-align:center;}
     footer .footer_des h3{font-size:24px;}
     footer .footer_des address{font-size:16px;line-height:24px;margin-top:30px;}

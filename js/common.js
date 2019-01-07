@@ -88,13 +88,16 @@ $(function(){
 
 //lineup.html
 $(function(){
+    $('.tab').hide();
     //lineup_dot 클릭시 text복제
     $('.lineup_dot').click(function(e) {
         e.preventDefault();
+        $('.tab').hide();
         var copiedText = $(this).text();
         var copiedIndex = $(this).index();
-
+        
         $('.lineup_title').html(copiedText);
+        $('.tab').eq(copiedIndex).show();
         if(copiedIndex == 0){
             $('.lineup_des').html('친환경 전기모터의 도움으로 보다 쉬운 주행이 가능한 자전거');
         }else if(copiedIndex == 1){
