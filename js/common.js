@@ -93,6 +93,7 @@ $(function(){
     $('.lineup_dot').click(function(e) {
         e.preventDefault();
         $('.tab').hide();
+        $('.tab_default').hide();
         var copiedText = $(this).text();
         var copiedIndex = $(this).index();
         
@@ -123,5 +124,15 @@ $(function(){
         }else{
             $('.lineup_des').html('기타 자전거');
         }
+    });
+    $('.list_view_btn').click(function(){
+        $('.grid_view_btn').removeClass('on');
+        $(this).addClass('on');
+        $('.tab_con').addClass('list_view');
+    });
+    $('.grid_view_btn').click(function(){
+        $('.list_view_btn').removeClass('on');
+        $(this).addClass('on');
+        $('.tab_con').removeClass('list_view');
     });
 });

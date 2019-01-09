@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    <a href="#main" class="text_hide fixed">본문 바로가기</a>
     <!-- start of header -->
     <header class="clear_fix">
         <h1 id="logo"><a href="../index.html" class="text_hide">LOGO</a></h1>
@@ -112,7 +113,7 @@
     <!-- End of aside aside_sticky -->
 
     <!-- Start of content -->
-    <div class="content">
+    <main id="main" class="content">
         <div class="lineup">
             <div class="lineup_img_wrapper">
                 <div class="lineup_img_mask"></div>
@@ -137,10 +138,18 @@
                 <a href="#" class="lineup_dot text_hide">그외</a>
             </div>
             <div class="tabs_wrapper">
-                <div class="tabs_head">
-
+                <div class="tabs_head clear_fix">
+                    <div class="tab_view clear_fix">
+                        <div class="grid_view_btn on text_hide">그리드뷰 보기</div>
+                        <div class="list_view_btn text_hide">리스트뷰 보기</div>
+                    </div>
+                    <div class="tab_sort clear_fix">
+                        <div class="all_sort text_hide">전체 정렬</div>
+                        <div class="price_sort text_hide">가격순 정렬</div>
+                    </div>
                 </div>
                 <div class="tabs">
+                    <div class="tab_default">자전거 라인업을 선택해주세요.</div>
                     <div class="tab clear_fix">
                         <h3 class="text_hide">전기자전거</h3>
                         <div class="tab_con">
@@ -660,7 +669,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <!-- End of content -->
 
     <!-- Start of footer -->
