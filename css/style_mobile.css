@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
 
 /* common */
+
 html{font-family:'Noto Sans KR',sans-serif;color:#222222;
     /* Support for all WebKit browsers. */-webkit-font-smoothing:antialiased;
     /* Support for Safari and Chrome. */text-rendering:optimizeLegibility;
@@ -96,6 +97,7 @@ footer .footer_des p{font-size:1.2rem;line-height:2rem}
 }
 
 /* index */
+
 .content{padding:20px;overflow:hidden;box-sizing:border-box;}
 .main_visual{width:100%;height:auto;margin-bottom:200px;position:relative;}
 .main_visual.on{z-index:-1;}
@@ -202,3 +204,10 @@ footer .footer_des p{font-size:1.2rem;line-height:2rem}
     .service_con .service_img:hover .service_mask{background:#f7ed5c;}
     .service_con .service_img .service_des{padding:0 10%;box-sizing:border-box;}
 }
+
+/* lineup */
+
+.lineup{width:100%;height:40vw;overflow:hidden;}
+.lineup .lineup_img_wrapper img{width:auto;height:100%;transform:translateX(-10%);}
+
+/* detail */
