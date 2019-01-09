@@ -9,7 +9,8 @@
     <meta name="author" content="@imppomi">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>메인 | 알톤스포츠</title>
-    <link href="css/index.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" media="screen and (min-width:1463px)">
+    <link href="css/style_mobile.css" rel="stylesheet" media="screen and (max-width:1462px)">
 
     <script src="lib/jquery-1.12.4.min.js"></script>
     <script src="lib/prefixfree.min.js"></script>
@@ -22,6 +23,7 @@
 </head>
 
 <body>
+    <a href="#main" class="text_hide fixed">본문 바로가기</a>
     <!-- start of header -->
     <header class="clear_fix">
         <h1 id="logo"><a href="index.html" class="text_hide">LOGO</a></h1>
@@ -111,7 +113,7 @@
     <!-- End of aside aside_sticky -->
 
     <!-- Start of content -->
-    <div class="content">
+    <main id="main" class="content">
         <!-- Start of main_visual -->
         <div class="main_visual clear_fix">
             <div class="slide_bg"></div>
@@ -290,7 +292,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <!-- End of content -->
 
     <!-- Start of footer -->
