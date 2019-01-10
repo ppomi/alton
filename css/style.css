@@ -257,6 +257,8 @@ footer .footer_des p{font-size:16px;line-height:24px;}
 .lineup .tabs_wrapper .tabs_head .tab_view .list_view_btn{background: url(../img/html/list_view_btn.png) no-repeat center center;}
 .lineup .tabs_wrapper .tabs_head .tab_view .grid_view_btn{background: url(../img/html/grid_view_btn.png) no-repeat center center;}
 .lineup .tabs_wrapper .tabs_head .tab_view div.on,.lineup .tabs_wrapper .tabs_head .tab_sort div.on{background-color:#f7ed5c;}
+.lineup .tabs_wrapper .tabs_head .tab_sort .all_sort_btn{background: url(../img/html/all_sort_btn.png) no-repeat center center;}
+.lineup .tabs_wrapper .tabs_head .tab_sort .price_sort_btn{background: url(../img/html/price_sort_btn.png) no-repeat center center;}
 .lineup .tabs_wrapper .tabs{width:100%;height:auto;}
 .lineup .tabs_wrapper .tabs .tab_default{width:100%;height:auto;padding:80px;box-sizing:border-box;text-align:center;font-size:24px;line-height:100px;}
 .lineup .tabs_wrapper .tab{width:100%;height:auto;}

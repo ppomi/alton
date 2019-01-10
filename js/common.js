@@ -135,4 +135,12 @@ $(function(){
         $(this).addClass('on');
         $('.tab_con').removeClass('list_view');
     });
+    $('.all_sort_btn').click(function(){
+        $('.price_sort_btn').removeClass('on');
+        $(this).addClass('on');
+    });
+    $('.price_sort_btn').click(function(){
+        $('.all_sort_btn').removeClass('on');
+        $(this).addClass('on');
+    });
 });
