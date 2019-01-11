@@ -53,7 +53,7 @@ header{width:100%;height:120px;padding:20px;box-sizing:border-box;}
 .menu_wrap .gnb > ul > li:nth-child(1){display:block;width:30px;height:30px;margin-top:26px;}
 .menu_wrap .gnb > ul > li:nth-child(1) a{display:block;}
 .menu_wrap .gnb > ul > li:nth-child(1) .menu_bar{display:block;width:30px;height:3px;margin-bottom:8px;background:#222222;}
-.menu_wrap .gnb > ul > li > a{display:block;width:170px;height:100%;overflow:hidden;text-align:center;font-size:1.8rem;font-weight:700;line-height:6rem;margin:auto;}
+.menu_wrap .gnb > ul > li > a{display:block;width:50px;height:100%;overflow:hidden;text-align:center;font-size:1.8rem;font-weight:700;line-height:6rem;margin:auto;}
 .menu_wrap .gnb > ul > li > a .highlight{position:absolute;top:0px;left:50%;margin-left:-75px;z-index:-1;display:block;width:150px;height:0px;background:#f7ed5c;transition: all 0.2s ease-in;}
 .menu_wrap .gnb > ul > li > a:hover .highlight{top:30px;height:16px;}
 .menu_wrap .gnb > ul > li > a.on .highlight{top:30px;height:16px;}
@@ -176,7 +176,7 @@ footer .footer_des p{font-size:1.2rem;line-height:2rem}
 .service_con .service_img .service_mask{width:100%;height:100%;position:absolute;top:0;right:0;background:rgba(247,237,92,0.7);z-index:2;transition:all 1s;}
 .service_con .service_img.school{background:url('../img/service_con01.jpg') no-repeat center center;background-size:cover;}
 .service_con .service_img.search{background:url('../img/service_con02.jpg') no-repeat center center;background-size:cover;}
-.service_con .service_img .service_title{width:100%;font-family:'Noto Sans KR Black';font-size:4rem;position:absolute;top:100px;left:0;z-index:10;transition:all 1s;word-break:keep-all;}
+.service_con .service_img .service_title{width:100%;font-family:'Noto Sans KR Black';font-weight:900;font-size:4rem;position:absolute;top:100px;left:0;z-index:10;transition:all 1s;word-break:keep-all;}
 .service_con .service_img .service_des{width:100%;font-size:1.6rem;line-height:30px;position:absolute;top:250px;left:0;z-index:10;transition:all 1s;word-break:keep-all;}
 .service_con .service_img .service_btn{width:120px;position:absolute;top:348px;left:50%;margin-left:-60px;z-index:10;transition:all 1s;}
 .service_con .service_img .service_btn a{display:block;font-size:2rem;line-height:3rem;font-weight:700;color:#222222;}
