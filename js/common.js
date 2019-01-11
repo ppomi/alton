@@ -96,7 +96,9 @@ $(function(){
         $('.tab_default').hide();
         var copiedText = $(this).text();
         var copiedIndex = $(this).index();
-        
+        var imgIndex = copiedIndex+1;
+        var imgHtmlContent = '<img src="../img/html/lineup_subvisual_'+imgIndex+'.jpg" alt="알톤자전거 라인업">';
+        $('.lineup_img_box').html(imgHtmlContent);        
         $('.lineup_title').html(copiedText);
         $('.tab').eq(copiedIndex).show();
         if(copiedIndex == 0){
