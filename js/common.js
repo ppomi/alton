@@ -35,7 +35,6 @@ $(function(){
      $('.lang_wrap').hide();
      $('.sub_menu').hide();
      $('#search').hide();
-
      $('#lang_kor').click(function(){
          $('.lang_wrap').stop().slideToggle();
      });
