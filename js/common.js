@@ -1,17 +1,19 @@
 /**
  * common.js
  */
-
+$(document).on('click', 'a[href="#"]', function(e){
+    e.preventDefault();
+});
 // 스크롤 시 div부드럽게 올라오기
 $(function(){
 	var $window = $(window);
 	function anime(){
-		var offset=$window.scrollTop()+$window.height();
+		var offset = $window.scrollTop() + $window.height();
 		if ($('.animatable').length<0){
 			$window.off('scroll',anime);
 		}
 		$('.animatable').each(function(i) {
-			var $animatable=$(this);
+			var $animatable = $(this);
 			if ($animatable.offset().top+($animatable.height()/2)<offset) {
 				$animatable.removeClass('animatable').addClass('animated');
 			}
@@ -29,7 +31,7 @@ $(function(){
 });
 // gnb와 util 메뉴 동작
 $(function(){
-    var i=0;
+    var i = 0;
      $('.lang_wrap').hide();
      $('.sub_menu').hide();
      $('#search').hide();
@@ -38,14 +40,14 @@ $(function(){
          $('.lang_wrap').stop().slideToggle();
      });
      $('.search').click(function(){
-        if(i==1){
+        if(i == 1){
             $('#search').stop().slideUp();
             $('.search').css('top','0px');
-            i=0;
+            i = 0;
         }else{
             $('#search').stop().slideDown();
             $('.search').css('top','30px');
-            i=1;
+            i = 1;
         }
      });
      $('#menu_bar').click(function(){
@@ -57,7 +59,7 @@ $(function(){
 // 메인비주얼, 스타일 슬라이드 동작
 $(function(){
     $('.slide_dot').click(function(){
-        var index=$('.slide_dot').index(this);
+        var index = $('.slide_dot').index(this);
         $('.slide_dot').removeClass('active_slide');
         $('.slide_dot').eq(index).addClass('active_slide');
         $('.slide_img').removeClass('active_slide');
@@ -66,18 +68,18 @@ $(function(){
         $('.slide_con').eq(index).addClass('active_slide');
     });
     $('.style_list_title').mouseover(function(){
-        var index=$('.style_list_title').index(this);
+        var index = $('.style_list_title').index(this);
         $('.style_img').removeClass('active_slide');
         $('.style_img').eq(index).addClass('active_slide');       
     });
 });
 // 비디오 offset값에 따라 재생
 $(function(){
-    var winTop=0;
-    var vidTop=0;
+    var winTop = 0;
+    var vidTop = 0;
     $(window).scroll(function() {
-        winTop=$(window).scrollTop();
-        vidTop=$('.alton_video').offset().top-400;
+        winTop = $(window).scrollTop();
+        vidTop = $('.alton_video').offset().top-400;
         if(winTop>vidTop && winTop<vidTop+800){
             $('#alton_video').get(0).play();
         }else{
@@ -144,5 +146,38 @@ $(function(){
     $('.price_sort_btn').click(function(){
         $('.all_sort_btn').removeClass('on');
         $(this).addClass('on');
+    });
+});
+//detail.html
+$(function(){
+    $('.detail_color a').on('click', function(e){
+        e.preventDefault();
+        var index = $(this).index();
+        $('.detail_color a').removeClass('on');
+        $('.detail_color a').eq(index).addClass('on');
+        $('.detail_img .img').removeClass('on');
+        $('.detail_img .img').eq(index).addClass('on');
+    });
+    $('.detail_part_view_wrapper').each(function(){
+        var pic = $(this).find('img');
+        var count = pic.length;
+        var currentIndex = 0;
+        var sp = 1000;
+        var indicator = $('.detail_part_view_dots a');
+        pic.eq(currentIndex).fadeIn(sp);
+        setInterval(slideShow, 2000);
+        function slideShow(){
+            var nextIndex = (currentIndex+1) % count;
+            pic.eq(currentIndex).fadeOut(sp);
+            pic.eq(nextIndex).fadeIn(sp);
+            currentIndex = nextIndex;
+            indicator.removeClass('on');
+            indicator.eq(currentIndex).addClass('on');
+        }
+        indicator.on('click', function(){
+            if(!$(this).hasClass('on')){
+                slideShow($(this).index());
+            }
+        });
     });
 });
