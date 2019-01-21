@@ -24,7 +24,7 @@ $(function(){
 });
 // top_btn 클릭시 상단 이동
 $(function(){
-    $('.top_btn a').click(function() {
+    $('.top_btn a').on('click',function() {
         $('html, body').animate({'scrollTop' : '0'}, 1000);
     });
 });
@@ -34,10 +34,10 @@ $(function(){
      $('.lang_wrap').hide();
      $('.sub_menu').hide();
      $('#search').hide();
-     $('a#lang_kor').click(function(){
+     $('a#lang_kor').on('click',function(){
          $('.lang_wrap').stop().slideToggle();
      });
-     $('a.search').click(function(){
+     $('a.search').on('click',function(){
         if(i == 1){
             $('#search').stop().slideUp();
             $('.search').css({'top' : '0px'});
@@ -48,7 +48,7 @@ $(function(){
             i = 1;
         }
      });
-     $('a#menu_bar').click(function(){
+     $('a#menu_bar').on('click',function(){
          $('.gnb>ul').toggleClass('on');
          $('.gnb>ul>li').toggleClass('on');
          $('.main_visual').toggleClass('on');
@@ -56,13 +56,13 @@ $(function(){
 });
 // 메인비주얼, 스타일 슬라이드 동작
 $(function(){
-    $('.slide_dots a').click(function(){
+    $('.slide_dots a').on('click',function(){
         var index = $('.slide_dots a').index(this);
         $('.slide_dots a').removeClass('active_slide').eq(index).addClass('active_slide');
         $('.slide_img').removeClass('active_slide').eq(index).addClass('active_slide');
         $('.slide_con').removeClass('active_slide').eq(index).addClass('active_slide');
     });
-    $('.style_list_title a').mouseover(function(){
+    $('.style_list_title a').on('mouseenter',function(){
         var index = $('.style_list_title a').index(this);
         $('.style_img').removeClass('active_slide').eq(index).addClass('active_slide');       
     });
@@ -70,11 +70,16 @@ $(function(){
 // 비디오 offset값에 따라 재생
 $(function(){
     var winTop = 0;
-    var vidTop = 0;
-    $(window).scroll(function() {
+    var minShow = 0;
+    var maxShow = 0;
+    var vidHeight = 0;
+    winTop = $(window).scrollTop();
+    $(window).on('scroll resize',function() {
         winTop = $(window).scrollTop();
-        vidTop = $('.alton_video').offset().top - 400;
-        if(winTop>vidTop && winTop<vidTop+800){
+        vidHeight = $('#alton_video').outerHeight();
+        minShow = $('.alton_video').offset().top - vidHeight;
+        maxShow = $('.alton_video').offset().top + (vidHeight/2);
+        if(winTop>minShow && winTop<maxShow){
             $('#alton_video').get(0).play();
         }else{
             $('#alton_video').get(0).pause();
@@ -86,7 +91,7 @@ $(function(){
 $(function(){
     $('.tab').hide();
     //lineup_dot 클릭시 text복제
-    $('.lineup_dots a').click(function() {
+    $('.lineup_dots a').on('click',function() {
         $('.tab').hide();
         $('.tab_default').hide();
         var copiedText = $(this).text();
@@ -122,21 +127,21 @@ $(function(){
             $('.lineup_des').html('기타 자전거');
         }
     });
-    $('.tab_view a.list_view_btn').click(function(){
+    $('.tab_view a.list_view_btn').on('click',function(){
         $('.grid_view_btn').removeClass('on');
         $(this).addClass('on');
         $('.tab_con').addClass('list_view');
     });
-    $('.tab_view a.grid_view_btn').click(function(){
+    $('.tab_view a.grid_view_btn').on('click',function(){
         $('.list_view_btn').removeClass('on');
         $(this).addClass('on');
         $('.tab_con').removeClass('list_view');
     });
-    $('.tab_sort a.all_sort_btn').click(function(){
+    $('.tab_sort a.all_sort_btn').on('click',function(){
         $('.price_sort_btn').removeClass('on');
         $(this).addClass('on');
     });
-    $('.tab_sort a.price_sort_btn').click(function(){
+    $('.tab_sort a.price_sort_btn').on('click',function(){
         $('.all_sort_btn').removeClass('on');
         $(this).addClass('on');
     });
