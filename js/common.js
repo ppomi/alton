@@ -77,8 +77,9 @@ $(function(){
     $(window).on('scroll resize',function() {
         winTop = $(window).scrollTop();
         vidHeight = $('#alton_video').outerHeight();
-        minShow = $('.alton_video').offset().top - vidHeight;
+        minShow = $('.alton_video').offset().top - 200;
         maxShow = $('.alton_video').offset().top + (vidHeight/2);
+        console.log(winTop + '/' + minShow + '/' + maxShow);
         if(winTop>minShow && winTop<maxShow){
             $('#alton_video').get(0).play();
         }else{
