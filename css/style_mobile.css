@@ -206,7 +206,7 @@ footer .footer_des p{font-size:1.2rem;line-height:2rem}
 .lineup .lineup_img_wrapper img{width:auto;height:100%;transform:translateX(-10%);}
 .lineup .lineup_img_wrapper .lineup_img_mask{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.4);z-index:2;}
 .lineup .lineup_img_wrapper .lineup_img_box{height:100%;}
-.lineup .lineup_title{position:absolute;top:54vw;left:0px;width:100%;font-size:10vw;font-weight:900;color:#f7ed5d;line-height:10vw;text-align:center;z-index:4;}
+.lineup .lineup_title{position:absolute;top:54vw;left:0px;width:100%;font-family:'Noto Sans KR Black';font-size:10vw;font-weight:900;color:#f7ed5d;line-height:10vw;text-align:center;z-index:4;}
 .lineup .lineup_des{position:absolute;top:23vw;left:10%;width:80%;font-size:5vw;font-weight:300;color:#f7ed5d;line-height:7vw;text-align:center;word-break:keep-all;z-index:4;}
 .lineup .lineup_dots{position:relative;margin-top:9vw;width:100%;height:auto;text-align:center;margin-bottom:6vw;}
 .lineup .lineup_dots .lineup_dot{display:inline-block;width:20px;height:20px;background:#222222;border-radius:10px;margin:8px 13px;cursor:pointer;}
@@ -272,7 +272,7 @@ footer .footer_des p{font-size:1.2rem;line-height:2rem}
 .detail .detail_img_wrapper .detail_img{width:100%;height:100%;position:relative;}
 .detail .detail_img_wrapper .detail_img .img{opacity:0.5;width:100%;position:absolute;top:0px;left:0px;transition:all 0.5s ease-out;}
 .detail .detail_img_wrapper .detail_img .img.on{opacity:1;}
-.detail .detail_img_wrapper .detail_title{position:absolute;top:49vw;left:5vw;width:100%;height:auto;line-height:8vw;font-size:8vw;font-weight:900;letter-spacing:2vw;}
+.detail .detail_img_wrapper .detail_title{position:absolute;top:49vw;left:5vw;width:100%;height:auto;line-height:8vw;font-size:8vw;font-family:'Noto Sans KR Black';font-weight:900;letter-spacing:2vw;}
 .detail .detail_img_wrapper .detail_title .sub_title{font-size:4vw;line-height:7vw;}
 .detail .detail_img_wrapper .detail_color{position:absolute;top:-15px;right:10px;width:70px;height:30px;}
 .detail .detail_img_wrapper .detail_color a{display:block;width:30px;height:100%;float:left;border-radius:15px;border:5px solid #ffffff;box-sizing:border-box;}

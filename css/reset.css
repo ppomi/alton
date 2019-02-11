@@ -1,5 +1,5 @@
 address,article,aside,audio,blockquote,body,canvas,caption,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,label,legend,li,mark,menu,nav,ol,p,section,table,tbody,td,tfoot,th,thead,time,tr,ul,video{margin:0;padding:0;}
-article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block;}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block;}
 fieldset,img{border:none;}
 input,select{vertical-align:middle;}
 address,em{font-style:normal;}
