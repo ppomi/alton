@@ -31,28 +31,49 @@ $(function(){
 // gnb와 util 메뉴 동작
 $(function(){
     var i = 0;
-     $('.lang_wrap').hide();
-     $('.sub_menu').hide();
-     $('#search').hide();
-     $('a#lang_kor').on('click',function(){
-         $('.lang_wrap').stop().slideToggle();
-     });
-     $('a.search').on('click',function(){
-        if(i == 1){
-            $('#search').stop().slideUp();
-            $('.search').css({'top' : '0px'});
-            i = 0;
-        }else{
-            $('#search').stop().slideDown();
-            $('.search').css({'top' : '30px'});
-            i = 1;
-        }
-     });
-     $('a#menu_bar').on('click',function(){
-         $('.gnb>ul').toggleClass('on');
-         $('.gnb>ul>li').toggleClass('on');
-         $('.main_visual').toggleClass('on');
-     });
+    $('.lang_wrap').hide();
+    $('.sub_menu').hide();
+    $('#search').hide();
+    $('.close_btn').hide();
+    $('a#lang_kor').on('click',function(){
+        $('.lang_wrap').stop().slideToggle();
+    });
+    $('a.search').on('click',function(){
+       if(i == 1){
+           $('#search').stop().slideUp();
+           $('.search').css({'top' : '0px'});
+           i = 0;
+       }else{
+           $('#search').stop().slideDown();
+           $('.search').css({'top' : '30px'});
+           i = 1;
+       }
+    });
+    $('a#menu_bar').on('click',function(){
+        $('.menu_wrap .gnb > ul > li:nth-child(1)').hide();
+        $('.close_btn').show();
+        $('.gnb>ul').addClass('on');
+        $('.gnb>ul>li').addClass('on');
+        $('.main_visual').addClass('on');
+        $('#aside_sticky').addClass('on');
+        $(this).parents('ul').append('<li class="on"><a href="#" class="return"></a></li>');
+        $('.close_btn a').trigger('focus');
+        $('.return').on('focus', function() {
+           $('.close_btn a').trigger('focus');
+       });
+    });
+    $('.close_btn a').on('click',function(){
+        $('.menu_wrap .gnb > ul > li:nth-child(1)').show();
+        $('.gnb>ul').removeClass('on');
+        $('.gnb>ul>li').removeClass('on');
+        $('.main_visual').removeClass('on');
+        $('#aside_sticky').removeClass('on');
+        $('.close_btn').hide();
+        $('.slide_dots .slide_dot:eq(0)').trigger('focus');
+    });
+    $('#aside_sticky').on('focus', function() {
+        $('.slide_dots a').eq(0).trigger('focus');
+    });
 });
 // 메인비주얼, 스타일 슬라이드 동작
 $(function(){
